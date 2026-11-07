@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- BUSINESS_NAME = "Sara Blomster" (single constant — see assets/js/main.js) -->
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7-dages indholdskalender — Sara Blomster, Odense C</title>
+<meta name="description" content="Sara Blomsters 7-dages indholdskalender (eksempel): en kurateret social media-plan med ugens buket, bag kulissen, bryllupsinspiration og fredagsblomster. Alle tider er eksempler.">
+<meta property="og:title" content="7-dages indholdskalender — Sara Blomster">
+<meta property="og:description" content="En kurateret ugeplan for blomsterindhold: foto, Reels og stories fra atelieret på Hjallesevej 10.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/assets/css/style.css">
+<noscript><style>.reveal{opacity:1 !important;transform:none !important}.hero__media img{animation:none !important}</style></noscript>
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%231C3325'/%3E%3Ccircle cx='16' cy='11' r='5' fill='%23C29B4D'/%3E%3Ccircle cx='11' cy='18' r='4' fill='%23EED9D5'/%3E%3Ccircle cx='21' cy='18' r='4' fill='%23EED9D5'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip-link" href="#main">Spring til indhold</a>
+
+<div class="ribbon" aria-hidden="true">
+  <div class="ribbon__track">
+    <span>Hjallesevej 10, Odense C</span><span>✦</span><span>Tlf. +45 66 12 51 54</span><span>✦</span><span>Botanisk håndværk siden 1937</span><span>✦</span><span>Est. 1937 i Odense C</span><span>✦</span>
+    <span>Hjallesevej 10, Odense C</span><span>✦</span><span>Tlf. +45 66 12 51 54</span><span>✦</span><span>Botanisk håndværk siden 1937</span><span>✦</span><span>Est. 1937 i Odense C</span><span>✦</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="/" aria-label="Sara Blomster — forside">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.2"/><circle cx="7.5" cy="14.5" r="2.6"/><circle cx="16.5" cy="14.5" r="2.6"/><path d="M12 11.5V21"/></svg>
+      </span>
+      <span>
+        <span class="brand__name">Sara Blomster</span>
+        <span class="brand__tag">Est. 1937 • Odense C</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Åbn menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Hovedmenu">
+      <ul>
+        <li><a href="/">Forside</a></li>
+        <li><a href="/kollektioner/">Kollektioner</a></li>
+        <li><a href="/kalender/" aria-current="page">Indholdskalender</a></li>
+        <li><a href="/om-kontakt/">Om &amp; Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--primary btn--small" href="/om-kontakt/#forespoergsel">Bestil buket</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section" aria-labelledby="page-title" style="padding-bottom:0">
+    <div class="wrap">
+      <p class="eyebrow">Botanisk Content Engine • Redaktionel plan</p>
+      <h1 id="page-title">7-dages indholdskalender for Sara Blomster</h1>
+      <p class="lede">En kurateret social media-plan baseret på AI-fotoshootet, der fremhæver håndværk, årstidens blomster og butikslivet på Hjallesevej. Alle tider er eksempler — ikke butikkens faktiske opslagstider.</p>
+
+      <div class="cal-stats">
+        <div class="cal-stat">
+          <p class="cal-stat__label">Ugecyklus</p>
+          <p class="cal-stat__value">Man – Søn</p>
+          <p class="cal-stat__sub">Rullende ugeprogram</p>
+        </div>
+        <div class="cal-stat">
+          <p class="cal-stat__label">Ugentlig dækning</p>
+          <p class="cal-stat__value">7 opslag</p>
+          <p class="cal-stat__sub">Feed, Reels &amp; Stories</p>
+        </div>
+        <div class="cal-stat">
+          <p class="cal-stat__label">Billedkilder</p>
+          <p class="cal-stat__value">Atelier Studio</p>
+          <p class="cal-stat__sub">Fotokoncept • AI-genererede prøver</p>
+        </div>
+        <div class="cal-stat">
+          <p class="cal-stat__label">Fokusområder</p>
+          <p class="cal-stat__value">Buket &amp; fest</p>
+          <p class="cal-stat__sub">Sæsonaktuel flora</p>
+        </div>
+        <div class="cal-stat">
+          <p class="cal-stat__label">Geografi</p>
+          <p class="cal-stat__value">Hjallesevej 10</p>
+          <p class="cal-stat__sub">Odense C • Fyn</p>
+        </div>
+      </div>
+
+      <div style="margin-top:28px">
+        <button class="btn btn--outline" type="button" id="export-calendar">Eksportér oversigt</button>
+      </div>
+
+      <div class="chips" data-filter-group="calendar" role="group" aria-label="Filtrér ugedage efter format">
+        <button class="chip" type="button" data-filter="alle" aria-pressed="true">Alle dage</button>
+        <button class="chip" type="button" data-filter="foto" aria-pressed="false">Foto</button>
+        <button class="chip" type="button" data-filter="reel" aria-pressed="false">Reel / Story</button>
+        <button class="chip" type="button" data-filter="karrusel" aria-pressed="false">Karrusel</button>
+      </div>
+
+      <h2 style="margin-top:44px">Det rullende ugeprogram</h2>
+      <p class="lede" style="margin-bottom:0">Odense C Atelier — <span class="confirm-tag">[TO CONFIRM — sample schedule]</span></p>
+
+      <div class="week-grid">
+        <!-- MANDAG -->
+        <article class="day-card reveal" data-format="foto">
+          <div class="day-card__media">
+            <span class="ai-tag ai-tag--overlay">AI-genereret prøve</span>
+            <img src="/assets/img/foraarsbuket.webp" alt="Ugens buket: forårsbuket i kraftpapir — AI-genereret prøve" width="1408" height="1760" loading="lazy">
+          </div>
+          <div class="day-card__body">
+            <p class="day-card__day"><span>Mandag</span><span class="day-card__time">Kl. 08:30</span></p>
+            <h3>Mandag — Ugens Buket</h3>
+            <p class="day-card__format">Instagram &amp; Facebook foto (post)</p>
+            <p class="day-card__topic">Emne: Ugens udvalgte buket i forretningen</p>
+            <p class="day-card__caption">Start ugen med duften af friske ranunkler og forårstulipaner. Vi har bundet ugens buket klar på Hjallesevej.</p>
+            <p><span class="confirm-tag">[TO CONFIRM — sample schedule]</span></p>
+            <p class="day-card__cta">CTA: Bestil til ugen</p>
+          </div>
+        </article>
+
+        <!-- TIRSDAG -->
+        <article class="day-card reveal" data-format="reel">
+          <div class="day-card__placeholder" role="img" aria-label="Konceptramme: bag kulissen i Odense værksted — video af stilke, snitning og båndbinding">
+            <svg class="frame-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 10l5-3v10l-5-3z"/></svg>
+            <p>[Konceptramme — bag kulissen i Odense værksted]</p>
+            <p style="text-transform:none;letter-spacing:0;font-weight:500;color:var(--muted)">Dynamisk video af stilke, snitning og båndbinding</p>
+          </div>
+          <div class="day-card__body">
+            <p class="day-card__day"><span>Tirsdag</span><span class="day-card__time">Kl. 12:15</span></p>
+            <h3>Tirsdag — Bag Kulissen</h3>
+            <p class="day-card__format">Reel / Story (video koncept)</p>
+            <p class="day-card__topic">Emne: Blomsterhåndværk og binderi i processen</p>
+            <p class="day-card__caption">Fra rå stilke til færdigt kunstværk: Se med bag disken, når Iben og teamet forbereder dagens bestillinger.</p>
+            <p><span class="confirm-tag">[TO CONFIRM — sample schedule]</span></p>
+            <p class="day-card__cta">CTA: Mød håndværket</p>
+          </div>
+        </article>
+
+        <!-- ONSDAG -->
+        <article class="day-card reveal" data-format="karrusel">
+          <div class="day-card__media">
+            <span class="ai-tag ai-tag--overlay">AI-genereret prøve</span>
+            <img src="/assets/img/hverdagsbuket.webp" alt="Bestil til fredag: hverdagsbuket i glasvase — AI-genereret prøve" width="1408" height="1760" loading="lazy">
+          </div>
+          <div class="day-card__body">
+            <p class="day-card__day"><span>Onsdag</span><span class="day-card__time">Kl. 15:45</span></p>
+            <h3>Onsdag — Bestil til Fredag</h3>
+            <p class="day-card__format">Karrusel post</p>
+            <p class="day-card__topic">Emne: Anledningspost &amp; tidlig bestilling</p>
+            <p class="day-card__caption">Skal der blomster på spisebordet til weekenden, eller vil du glæde en særlig person? Husk at forudbestille i god tid.</p>
+            <p><span class="confirm-tag">[TO CONFIRM — sample schedule]</span></p>
+            <p class="day-card__cta">CTA: Forudbestil nu</p>
+          </div>
+        </article>
+
+        <!-- TORSDAG -->
+        <article class="day-card reveal" data-format="foto">
+          <div class="day-card__media">
+            <span class="ai-tag ai-tag--overlay">AI-genereret prøve</span>
+            <img src="/assets/img/bryllupsbuket.webp" alt="Bryllup og inspiration: bryllupsbuket med hvide roser og pæoner — AI-genereret prøve" width="1408" height="1760" loading="lazy">
+          </div>
+          <div class="day-card__body">
+            <p class="day-card__day"><span>Torsdag</span><span class="day-card__time">Kl. 19:00</span></p>
+            <h3>Torsdag — Bryllup &amp; Inspiration</h3>
+            <p class="day-card__format">Højkvalitets editorial post</p>
+            <p class="day-card__topic">Emne: Bryllup &amp; festlig udsmykning</p>
+            <p class="day-card__caption">Kærlighed i fuldt flor. Går I i bryllupstanker? Vi inviterer til personlig blomstersamtale — ring eller skriv til os.</p>
+            <p><span class="confirm-tag">[TO CONFIRM — sample schedule]</span></p>
+            <p class="day-card__cta">CTA: Book konsultation</p>
+          </div>
+        </article>
+
+        <!-- FREDAG -->
+        <article class="day-card reveal" data-format="reel foto">
+          <div class="day-card__media">
+            <span class="ai-tag ai-tag--overlay">AI-genereret prøve</span>
+            <img src="/assets/img/foraarsbuket.webp" alt="Fredagsblomster: weekendbuket i kraftpapir — AI-genereret prøve" width="1408" height="1760" loading="lazy">
+          </div>
+          <div class="day-card__body">
+            <p class="day-card__day"><span>Fredag</span><span class="day-card__time">Kl. 09:00</span></p>
+            <h3>Fredag — Fredagsblomster</h3>
+            <p class="day-card__format">Story serie + weekend feed post</p>
+            <p class="day-card__topic">Emne: Fredagsbuketten og weekendafhentning</p>
+            <p class="day-card__caption">Fredagsstemning på Hjallesevej! Butikken bugner af weekendens friskeste farver. Bestil inden <span class="confirm-tag">[TO CONFIRM cutoff]</span></p>
+            <p><span class="confirm-tag">[TO CONFIRM cutoff &amp; tidsplan]</span></p>
+            <p class="day-card__cta">CTA: Fredagsblomster</p>
+          </div>
+        </article>
+
+        <!-- LØRDAG -->
+        <article class="day-card reveal" data-format="reel">
+          <div class="day-card__placeholder" role="img" aria-label="Konceptramme: butiksfacade og weekendstemning på Hjallesevej — morgenlys over facaden, udendørs kurve med stedmoder og lyng">
+            <svg class="frame-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M3 17l5-4 4 3 4-3 5 4"/></svg>
+            <p>[Konceptramme — butiksfacade &amp; weekendstemning på Hjallesevej]</p>
+            <p style="text-transform:none;letter-spacing:0;font-weight:500;color:var(--muted)">Morgenlys over facaden, udendørs kurve med stedmoder og lyng</p>
+          </div>
+          <div class="day-card__body">
+            <p class="day-card__day"><span>Lørdag</span><span class="day-card__time">Kl. 10:00</span></p>
+            <h3>Lørdag — Bymiljø &amp; Butiksliv</h3>
+            <p class="day-card__format">Story highlights / stemningsfoto</p>
+            <p class="day-card__topic">Emne: Lørdagsstemning i Odense C</p>
+            <p class="day-card__caption">Kig forbi på vej gennem byen. Kaffen er varm, og vi binder din buket, mens du venter.</p>
+            <p><span class="confirm-tag">[TO CONFIRM — sample schedule]</span></p>
+            <p class="day-card__cta">CTA: Besøg os på Hjallesevej</p>
+          </div>
+        </article>
+
+        <!-- SØNDAG -->
+        <article class="day-card reveal" data-format="foto">
+          <div class="day-card__media">
+            <span class="ai-tag ai-tag--overlay">AI-genereret prøve</span>
+            <img src="/assets/img/hverdagsbuket.webp" alt="Ro, natur og søndagspoesi: enkeltstående buket i glasvase — AI-genereret prøve" width="1408" height="1760" loading="lazy">
+          </div>
+          <div class="day-card__body">
+            <p class="day-card__day"><span>Søndag</span><span class="day-card__time">Kl. 10:30</span></p>
+            <h3>Søndag — Ro, Natur &amp; Søndagspoesi</h3>
+            <p class="day-card__format">Æstetisk minimalistisk post</p>
+            <p class="day-card__topic">Emne: Søndagshilsen &amp; botanisk nærvær</p>
+            <p class="day-card__caption">At omgive sig med blomster er at lukke naturens egen ro indenfor. Rigtig god søndag fra os på Hjallesevej.</p>
+            <p class="day-card__cta">CTA: Søndagshygge</p>
+            <p style="font-size:0.82rem;color:var(--muted);margin:0">Generisk citat/tekst, ikke tilskrevet nogen fiktiv person. Fokus på fordybelse og weekendro.</p>
+            <p><span class="confirm-tag">[TO CONFIRM — sample schedule]</span></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOVERNANCE -->
+  <section class="section section--tint" aria-labelledby="gov-title">
+    <div class="wrap">
+      <p class="eyebrow">Værktøjer &amp; governance</p>
+      <h2 id="gov-title">Strategisk oversigt for Sara Blomster Content Engine</h2>
+      <p class="lede">Tjekliste til at kalibrere tidsplaner, bekræfte butikkens afhentningsfrister samt godkende AI-konceptbilleder, før de publiceres.</p>
+      <div class="gov-grid">
+        <div class="gov-card reveal">
+          <h3>Verifikationsstatus</h3>
+          <p>Elementer markeret med [TO CONFIRM — sample schedule] er vejledende tids- og cut-off-punkter genereret som eksempel — de er ikke butikkens faktiske tider, før butikken bekræfter dem.</p>
+          <ul class="gov-check">
+            <li><span class="tick" aria-hidden="true">✓</span><span>Ugentlig publiceringsfrekvens fastlagt til 7 dage</span></li>
+            <li><span class="tick" aria-hidden="true">✓</span><span>Toner og stemmer afspejler fynsk blomsterarv siden 1937</span></li>
+            <li><span class="tick tick--pending" aria-hidden="true">…</span><span>Fredag cut-off tidspunkt afventer butiksbekræftelse</span></li>
+          </ul>
+          <p class="gov-card__sig">Atelier chef — Iben Møller Pedersen</p>
+          <h3 style="margin-top:28px">Billeddeklaration</h3>
+          <p>Alle illustrationer markeret som AI-genereret prøve tjener som visuelle moodboards til den løbende fotoproduktion.</p>
+          <p style="margin:0"><strong>Billedstandard:</strong> Skandinavisk dagslys<br><strong>Stemning:</strong> Rustikt naturpapir &amp; glas<br><strong>Lokation:</strong> Odense C binderi</p>
+        </div>
+        <div class="gov-card reveal">
+          <h3>Tilpas tidsplan</h3>
+          <p>Opdater opslagstider og afhentningsvinduer direkte herunder til udskrift eller intern koordinering. Dette er et demo-panel — ændringer gemmes kun lokalt i din browser.</p>
+          <form class="plan-form" id="plan-form">
+            <label for="cutoff">Fredagslevering cut-off</label>
+            <input type="text" id="cutoff" name="cutoff" placeholder="[TO CONFIRM cutoff]" aria-describedby="cutoff-help">
+            <p id="cutoff-help" style="font-size:0.85rem;color:var(--muted);margin:6px 0 0">Afhentningsfrist for fredagsbuketter — afventer butiksbekræftelse.</p>
+            <label for="channel">Primær kanal</label>
+            <select id="channel" name="channel">
+              <option>Instagram</option>
+              <option>Facebook-side</option>
+              <option>Nyhedsbrev • Fredagsbuketten</option>
+            </select>
+            <button class="btn btn--primary" type="submit">Gem ændringer</button>
+            <p class="plan-form__saved" id="plan-saved">✓ Ændringer gemt lokalt (demo). Husk at bekræfte tiderne med butikken.</p>
+          </form>
+        </div>
+      </div>
+      <div class="note-block reveal">
+        <h3>Sara Blomster • Grundlagt 1937</h3>
+        <p>Over 85 års blomsterhåndværk i Odense C. Alle sociale opslag planlægges i respekt for tradition, forår og fynsk blomsterkultur.</p>
+        <p style="margin-top:14px"><a class="shot-card__link" href="/kollektioner/">Gå til kollektioner →</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__main">
+    <div>
+      <a class="brand" href="/" aria-label="Sara Blomster — forside">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8" r="3.2"/><circle cx="7.5" cy="14.5" r="2.6"/><circle cx="16.5" cy="14.5" r="2.6"/><path d="M12 11.5V21"/></svg>
+        </span>
+        <span>
+          <span class="brand__name">Sara Blomster</span>
+          <span class="brand__tag">Est. 1937 • Odense C</span>
+        </span>
+      </a>
+      <p style="margin-top:18px">Klassisk fynsk blomsterbinderi og botanisk atelier i hjertet af Odense — blomster til livets store øjeblikke og hverdagens poesi siden 1937.</p>
+      <p>Grundlagt 1937 i Odense • Over 85 års blomsterhåndværk</p>
+    </div>
+    <div>
+      <h3>Atelier &amp; kontakt</h3>
+      <ul>
+        <li>Hjallesevej 10, 5000 Odense C</li>
+        <li>Telefon: <a href="tel:+4566125154">+45 66 12 51 54</a></li>
+        <li>E-mail: <a href="mailto:9128@butiksmail.dk">9128@butiksmail.dk</a></li>
+        <li>Indehaver: Iben Møller Pedersen</li>
+        <li>6 medarbejdere i værkstedet</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="/">Forside</a></li>
+        <li><a href="/kollektioner/">Kollektioner</a></li>
+        <li><a href="/kalender/">Indholdskalender</a></li>
+        <li><a href="/om-kontakt/">Om &amp; Kontakt</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Billeddeklaration</h3>
+      <p>Alle fotos markeret som [AI-genereret prøve] er visuelle konceptprøver for fotomaskinen og tjener som inspiration til den nye indholdsmotor — de er ikke fotos af butikkens egne buketter.</p>
+    </div>
+  </div>
+  <div class="wrap site-footer__bottom">
+    <span>© 2026 Sara Blomster, Odense C. Alle rettigheder forbeholdes.</span>
+    <span>Fynsk blomsterkultur</span>
+  </div>
+</footer>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
